@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_breakout_texts",
+  "info": {
+    "displayName": "Breakout Text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "displayType": {
+      "type": "enumeration",
+      "enum": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ]
+    }
+  }
+}
