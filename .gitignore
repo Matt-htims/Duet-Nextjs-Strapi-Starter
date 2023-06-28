@@ -2,3 +2,5 @@ node_modules
 readme-images
 .vscode
 .DS_Store
+.env
+.env.local
