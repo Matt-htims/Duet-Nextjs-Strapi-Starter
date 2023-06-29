@@ -60,7 +60,7 @@ export default function FormSubmit({ placeholder, text }) {
 							/>
 							<button
 								type="button"
-								className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-violet-400 text-gray-900 shadow-md"
+								className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-primary shadow-md"
 								onClick={handleSubmit}
 							>
 								{text}

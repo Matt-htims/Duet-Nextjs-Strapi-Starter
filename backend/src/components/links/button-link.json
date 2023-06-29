@@ -1,7 +1,8 @@
 {
   "collectionName": "components_links_button_links",
   "info": {
-    "displayName": "Button link"
+    "displayName": "Button link",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -19,7 +20,10 @@
       "type": "enumeration",
       "enum": [
         "primary",
-        "secondary"
+        "secondary",
+        "accent",
+        "cta",
+        "outline"
       ]
     }
   }

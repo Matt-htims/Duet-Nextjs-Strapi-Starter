@@ -1,6 +1,6 @@
 export default function BreakoutText({ data }) {
 	return (
-		<section className="bg-gray-100 py-32 px-8">
+		<section className="py-32 px-12">
 			<div className="container mx-auto text-center text-3xl font-medium">
 				{data.displayType == 'h1' ? (
 					<h1>{data.text}</h1>

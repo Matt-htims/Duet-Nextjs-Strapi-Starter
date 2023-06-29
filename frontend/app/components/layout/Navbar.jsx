@@ -13,7 +13,7 @@ function NavLink({ url, text }) {
 			<Link
 				href={url}
 				className={`flex items-center mx-4 -mb-1 ${
-					path === url && 'text-red-400'
+					path === url && 'text-dark'
 				}`}
 			>
 				{text}
@@ -25,7 +25,7 @@ function NavLink({ url, text }) {
 export default function Navbar({ links, logoUrl, logoText }) {
 	return (
 		<div className="p-4">
-			<div className="container flex justify-between h-16 mx-auto px-0 sm:px-6">
+			<div className="container flex justify-between h-16 mx-auto px-0 sm:px-6 ">
 				<Logo src={logoUrl}>
 					{logoText && <h2 className="text-2xl font-bold">{logoText}</h2>}
 				</Logo>
