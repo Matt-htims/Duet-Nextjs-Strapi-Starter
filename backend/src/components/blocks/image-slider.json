@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_image_sliders",
+  "info": {
+    "displayName": "Image slider"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

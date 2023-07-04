@@ -1,10 +1,10 @@
-import './globals.css';
+import '@/styles/globals.css';
 import { Inter } from 'next/font/google';
-import { getStrapiMedia, getStrapiURL } from './utils/api-helpers';
-import { fetchAPI } from './utils/fetch-api';
+import { getStrapiMedia, getStrapiURL } from '@/utils/api-helpers';
+import { fetchAPI } from '@/utils/fetch-api';
 
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -72,7 +72,7 @@ export default async function RootLayout({ children }) {
 
 	return (
 		<html lang="en">
-			<body className={`${inter.className}`}>
+			<body className={`${inter.className} relative`}>
 				<Navbar
 					links={navbar.links}
 					logoUrl={navbarLogoUrl}

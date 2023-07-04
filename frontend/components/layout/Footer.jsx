@@ -88,18 +88,18 @@ export default function Footer({
 						</ul>
 					</div>
 					<div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
-						{socialLinks.map((link) => {
+						{socialLinks.map((link) => (
 							<a
 								key={link.id}
 								rel="noopener noreferrer"
 								href={link.url}
 								title={link.text}
 								target={link.newTab ? '_blank' : '_self'}
-								className="flex items-center justify-center w-10 h-10 rounded-full bg-red-400 text-gray-900"
+								className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-black"
 							>
 								<RenderSocialIcon social={link.social} />
-							</a>;
-						})}
+							</a>
+						))}
 					</div>
 				</div>
 			</div>

@@ -28,6 +28,15 @@ const populate = {
           },
         },
       },
+      images: {
+        populate: {
+          data: {
+            attributes: {
+              fields: ["url", "alternativeText", "caption", "width", "height"],
+            },
+          },
+        },
+      },
       //   plans: {
       //     populate: ["product_features"],
       //   },

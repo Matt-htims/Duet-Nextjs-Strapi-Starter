@@ -1,5 +1,5 @@
-import { fetchAPI } from '@/app/utils/fetch-api';
-import { blockRenderer } from '@/app/utils/block-renderer';
+import { fetchAPI } from '@/utils/fetch-api';
+import { blockRenderer } from '@/utils/block-renderer';
 
 async function getPageBySlug(slug) {
 	const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;

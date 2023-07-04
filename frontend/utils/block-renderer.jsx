@@ -23,6 +23,14 @@ const LeadForm = dynamic(
 	{ ssr: true }
 );
 
+const RichText = dynamic(() => import('../components/blocks/RichText'), {
+	ssr: true,
+});
+
+const ImageSlider = dynamic(() => import('../components/blocks/ImageSlider'), {
+	ssr: true,
+});
+
 export function blockRenderer(block, index) {
 	switch (block.__component) {
 		case 'blocks.hero':
@@ -31,10 +39,12 @@ export function blockRenderer(block, index) {
 			return <BreakoutText key={index} data={block} />;
 		case 'blocks.testimonials-group':
 			return <Testimonials key={index} data={block} />;
-		// case 'sections.pricing':
-		// 	return <Pricing key={index} data={section} />;
+		case 'blocks.rich-text':
+			return <RichText key={index} data={block} />;
 		case 'blocks.lead-form':
 			return <LeadForm key={index} data={block} />;
+		case 'blocks.image-slider':
+			return <ImageSlider key={index} data={block} />;
 		default:
 			return null;
 	}

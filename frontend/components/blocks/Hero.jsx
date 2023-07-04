@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import HighlightedText from '../atoms/HighlightedText';
-import { getStrapiMedia } from '@/app/utils/api-helpers';
-import { renderButtonStyle } from '@/app/utils/render-button-style';
+import { getStrapiMedia } from '@/utils/api-helpers';
+import { renderButtonStyle } from '@/utils/render-button-style';
 
 export default function Hero({ data }) {
 	const imgUrl = getStrapiMedia(data.picture.data.attributes.url);
